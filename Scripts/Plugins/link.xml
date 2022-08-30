@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="Microsoft.Bcl.AsyncInterfaces" preserve="all" />
+  <assembly fullname="System.Reactive.Linq" preserve="all" />
+  <assembly fullname="System.Reactive.Interfaces" preserve="all" />
+  <assembly fullname="System.Reactive.Core" preserve="all" />
+</linker>
