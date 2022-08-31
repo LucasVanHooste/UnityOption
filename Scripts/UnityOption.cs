@@ -84,7 +84,7 @@ namespace UnityEngine
                 {
                     switch (unityOption._value)
                     {
-                        case Object obj:
+                        case Object obj: //this cast is needed or the option will have value null instead of being None
                             isSome = obj != null;
                             break;
                         case string s:
