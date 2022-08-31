@@ -1,6 +1,6 @@
 # UnityOption
 ## Description
-UnityOption is a C# implementation of the 'Option' type which can be serialized in the Unity inspector. An Option is a simple yet powerful concept for denoting an optional value. It makes code less prone to bugs by having the user acknowledge that the value it holds could be missing.  
+UnityOption is a C# implementation of the 'Option' type which can be serialized in the Unity inspector. An Option is a simple yet powerful concept for denoting an optional value. It makes code less prone to bugs by having the user of the type acknowledge that the value it holds could be missing.  
 
 To give the UnityOption type its functionality, this library uses the popular [language-ext library](https://github.com/louthy/language-ext), which implements many other functional programming concepts in C#. 
 
@@ -8,7 +8,7 @@ To give the UnityOption type its functionality, this library uses the popular [l
 Find the latest Unity package under the releases and import it into your project, or alternatively clone or download the repository.
 
 ## Contents
-This repository contains the UnityOption script and its dependencies, together with a CustomPropertyDrawer for the type and a CustomPropertyDrawer for highlighting missing references in the inspector.
+This repository contains the UnityOption script and its dependencies, together with a CustomPropertyDrawer for the type.
 
 ## Usage
 To serialize an optional value in the inspector, create a UnityOption field for the type you want to expose. You can create a UnityOption of any type but it is most useful for reference types because these can be null, which can cause runtime errors by design.
@@ -57,7 +57,9 @@ A UnityOption's behavior depends on the type it wraps:
 - Reference types: Eveluates to None if the value is null.
 
 ## Odin Validator
-Where this library really shines is in combination with the Odin Validator. Odin Validator makes it possible to require references in the inspector
+Where this library really shines is in combination with the [Odin Validator](https://odininspector.com/odin-validator). Odin Validator is a great tool for avoiding bugs in Unity projects. One of its features is requiring references in the inspector by default. Having every reference required is of course not very practical, sometimes you need optional values. For this Odin has an 'Optional' attribute. This attrivute works fine but doesn't explicitly convey to the user that the variable is opional when using it in code.
+
+This library was tested using v3.1.0.19 of the Odin Validator.
 
 ## Supported Unity Versions
 Unity versions **2021.2 and up** are supported. It's possible the library still works in older versions but this has not been verified.
