@@ -90,4 +90,4 @@ If you would like to add a new feature to the project please create an issue fir
 If you have questions about the project or want to discuss certain features, feel free to create an issue for this on GitHub.
 
 ## License
-UnityOption is licenced under [MIT](https://choosealicense.com/licenses/mit/)
+UnityOption is licensed under [MIT](https://choosealicense.com/licenses/mit/)
