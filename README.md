@@ -55,7 +55,10 @@ UnityOptions look like normal fields in the Unity inspector except for their nam
 - Reference types: Eveluates to None if the value is null.
 
 ## Unity version compatibility
-Unity versions **2021.2 and up** are supported. It's possible the library still works in older versions but this has not been verified.
+* Unity 2022: Fully compatible.
+* Unity 2021: Not compatible with IL2CPP when using .Net Framework. (default is .NET Standard)
+* Unity 2020: Not compatible with IL2CPP.
+* Older versions: Not compatible because generic serialized fields are not supported yet.
 
 ## Odin Validator
 Where this library really shines is in combination with the [Odin Validator](https://odininspector.com/odin-validator). Odin Validator is a great tool for avoiding bugs in Unity projects. One of its features is requiring references in the inspector by default. Having every reference required is of course not very practical, sometimes you need optional values. For this, Odin has a field attribute called 'Optional'. This attribute works fine but doesn't explicitly convey to the user that the variable is opional when using it in code. It's still just a regular field.
@@ -84,7 +87,7 @@ Bug fixes can be submitted by creating pull requests on GitHub. Be sure to clear
 If you would like to add a new feature to the project please create an issue first to suggest the change. Once discussed, the same steps can be followed as when fixing bugs.
 
 ## Questions & Discussions
-If you have questions about the library or want to discuss certain features, feel free to create an issue for this on GitHub.
+If you have questions about the project or want to discuss certain features, feel free to create an issue for this on GitHub.
 
 ## License
 UnityOption is licenced under [MIT](https://choosealicense.com/licenses/mit/)
