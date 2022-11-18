@@ -56,7 +56,7 @@ UnityOptions look like normal fields in the Unity inspector except for their nam
 
 ## Unity version compatibility
 * Unity 2022: Fully compatible.
-* Unity 2021: Not compatible with IL2CPP when using .Net Framework. (default is .NET Standard)
+* Unity 2021: Not compatible with IL2CPP when using .Net Framework.
 * Unity 2020: Not compatible with IL2CPP.
 * Older versions: Not compatible because generic serialized fields are not supported yet.
 
